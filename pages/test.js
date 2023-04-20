@@ -23,10 +23,7 @@ function Test({ users }) {
 }
 
 export async function getStaticProps() {
-//   const { params } = context;
-//   const { id } = params;
-
-  const res = await fetch(`http://localhost:3000/api/users`);
+  const res = await fetch(`/api/users`);
   const users = await res.json();
 
   return {
