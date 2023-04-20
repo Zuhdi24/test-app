@@ -23,7 +23,7 @@ function Test({ users }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`/api/users`);
+  const res = await fetch(`https://zuhdiali.me/test-app/api/users`);
   const users = await res.json();
 
   return {
