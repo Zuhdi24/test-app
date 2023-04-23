@@ -7,11 +7,11 @@ function Test({ users }) {
     <div>
       <h1>Users</h1>
       <ul>
-        {users.map(user => (
+        {users != null ? users.map(user => (
           <li key={user.id}>
             {user.username}, {user.password}
           </li>
-        ))}
+        )) : <li>loading...</li>}
       </ul>
     </div>
     <Link
