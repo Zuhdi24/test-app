@@ -18,7 +18,7 @@ export default function TransitionLayout({ children }) {
       <nav>
         <Link href="/">Home</Link>
         <Link href="/zuhdi">Zuhdi</Link>
-        <Link href="/test">Test</Link>
+        <Link href="/test2">Test 2</Link>
       </nav>
       <div
         onTransitionEnd={() => {
